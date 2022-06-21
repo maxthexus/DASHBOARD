@@ -10,6 +10,10 @@ menuBtn.addEventListener('click', ()=>{
 closeBtn.addEventListener('click', () => {
     sideMenu.style.display ='none'
 })
+//menu ativo
+
+
+
 //mudar tema
 altTema.addEventListener('click', ()=> {
     document.body.classList.toggle('tema-dark');
