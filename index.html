@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div class="container">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="imagens/logo.png" alt="">
+                        <h2 >EGA<span class="perigo">TOR</span></h2>
+                    </div>
+                        <div class="close" id="close-btn">
+                            <span class="material-icons-sharp">
+                                close
+                                </span>
+                        </div>
+                </div>
+                <div class="sidebar">
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            grid_view
+                            </span>
+                            <h3>Dashboard</h3>
+                    </a>
+                    <a href="#" class="ativo">
+                        <span class="material-icons-sharp">
+                            person_outline
+                            </span>
+                            <h3>Clientes</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            receipt_long
+                            </span>
+                            <h3>Pedidos</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            insights
+                            </span>
+                            <h3>Analise</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            mail_outline
+                            </span>
+                            <h3>Menssagens </h3>
+                            <span class="cont-msg">26</span>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            inventory
+                            </span>
+                            <h3>Produtos</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            report_gmailerrorred
+                            </span>
+                            <h3>Relatórios</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            settings
+                            </span>
+                            <h3>Configurações</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            add
+                            </span>
+                            <h3>Add Produto</h3>
+                    </a>
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            logout
+                            </span>
+                            <h3>Sair</h3>
+                    </a>
+                </div>
+            
+            </aside>
+<!-----------------------------------------Fim do aside-------------------------------------->
+            
+            <main>
+                <h1>Dashboard</h1>
+                <div class="data">
+                    <input type="date">
+                </div>
+<!-----------------------------------------Relatórios-------------------------------------->                
+                <div class="relatorios">
+<!--                                Vendas                                    -->
+                    <div class="vendas">
+                        <span class="material-icons-sharp">analytics</span>
+                        <div class="meio">
+                            <div class="esquerda">
+                                <h3>Total de Vendas</h3>
+                                <h1>R$25.345</h1>
+                            </div>
+                            <div class="progresso">
+                                <svg>
+                                    <circle cx="38" cy="38" r="36"></circle>
+                                </svg>
+                                <div class="numero">
+                                    <p>83%</p>
+                            </div>
+                        </div>
+                    </div>
+                            <small class="legendas">Ultimas 24h</small>
+                </div>
+<!--                              Fim de Vendas                              -->
+<!--                              Despesas                                   -->
+                    <div class="gastos">
+                        <span class="material-icons-sharp">
+                            bar_chart
+                            </span>
+                            <div class="meio">
+                                <div class="esquerda">
+                                    <h3>Total de Gastos</h3>
+                                    <h1>R$12.185</h1>
+                                </div>
+                                <div class="progresso">
+                                    <svg>
+                                        <circle cx="38" cy="38" r="36"></circle>
+                                    </svg>
+                                    <div class="numero">
+                                        <p>67%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <small class="legendas">Ultimas 24h</small>
+                    </div>
+<!--                          Fim de Despesas                                  -->
+<!--                             Receita                                       -->
+                    <div class="receita">
+                        <span class="material-icons-sharp">
+                        stacked_line_chart
+                            </span>
+                            <div class="meio">
+                                <div class="esquerda">
+                                    <h3>Receita Total</h3>
+                                    <h1>R$10.845</h1>
+                                </div>
+                                <div class="progresso">
+                                    <svg>
+                                        <circle cx="38" cy="38" r="36"></circle>
+                                    </svg>
+                                    <div class="numero">
+                                        <p>44%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <small class="legendas">Ultimas 24h</small>
+                    </div>
+<!--                            Fim de Receita                                 -->
+                                        
+                </div>
+<!--                          Fim de Relatórios                                -->
+<!--                                 Main                                      -->
+                <div class="pedidos-recentes">
+                    <h2>Pedidos Recentes</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome do Produto</th>
+                                <th>Nº do Produto</th>
+                                <th>Pagamento</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Foldable Mine Drone</td>
+                                <td>85631</td>
+                                <td>Due</td>
+                                <td class="atencao">Pendente</td>
+                                <td class="primaria">Detalhes</td>
+                            </tr>
+                            <tr>
+                                <td>Foldable Mine Drone</td>
+                                <td>85631</td>
+                                <td>Due</td>
+                                <td class="atencao">Pendente</td>
+                                <td class="primaria">Detalhes</td>
+                            </tr>
+                            <tr>
+                                <td>Foldable Mine Drone</td>
+                                <td>85631</td>
+                                <td>Due</td>
+                                <td class="atencao">Pendente</td>
+                                <td class="primaria">Detalhes</td>
+                            </tr>
+                            <tr>
+                                <td>Foldable Mine Drone</td>
+                                <td>85631</td>
+                                <td>Due</td>
+                                <td class="atencao">Pendente</td>
+                                <td class="primaria">Detalhes</td>
+                            </tr>
+                            <tr>
+                                <td>Foldable Mine Drone</td>
+                                <td>85631</td>
+                                <td>Due</td>
+                                <td class="atencao">Pendente</td>
+                                <td class="primaria">Detalhes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#">Mostre Tudo</a>
+                </div>
+            </main>
+<!--                          Fim de Main                                   -->
+<!--                            Cabeçalho                                   -->
+            <div class="direita">
+
+                <div class="cabecalho">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                    <div class="alt-tema">
+                        <span class="material-icons-sharp ativo">light_mode</span>
+                        <span class="material-icons-sharp">dark_mode</span>
+                    </div>
+                    <div class="perfil">
+                        <p>Hey, <b>Daniel</b></p>
+                        <small class="legendas">Admin</small>
+                    </div>
+                    <div class="foto-perfil">
+                        <img src="imagens/profile-1.jpg">
+                    </div>
+                </div>
+<!--                         Fim Cabeçalho                                  -->
+<!--                     Atualizações Recentes                              -->
+                <div class="atualizacoes-recentes">
+                    <h2>Atualizações Recentes</h2>
+                    <div class="atualizacoes">
+                        <div class="atualizacao">
+                            <div class="foto-perfil">
+                                <img src="imagens/profile-2.jpg">
+                            </div>
+                            <div class="mensagem">
+                                <p><b>Claudio Marques</b> Recebeu seu pedido GPS para Drone</p>
+                                <small class="legendas">2 min atrás</small>
+                            </div>
+                        </div>
+                    
+                        <div class="atualizacao">
+                            <div class="foto-perfil">
+                                <img src="imagens/profile-3.jpg">
+                            </div>
+                            <div class="mensagem">
+                                <p><b>Maria Fernanda</b> Recebeu seu pedido Controle Radio 5ghz</p>
+                                <small class="legendas">5 min atrás</small>
+                            </div>
+                        </div>
+
+                        <div class="atualizacao">
+                            <div class="foto-perfil">
+                                <img src="imagens/profile-4.jpg">
+                            </div>
+                            <div class="mensagem">
+                                <p><b>Claudio Marques</b> Recebeu seu pedido DJI air 2S</p>
+                                <small class="legendas">9 min atrás</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+<!--                 Fim Atualizações Recentes                              -->
+<!--                     Análise de Vendas                                  -->
+                <div class="analise-vendas">
+                    <h2>Análise de Vendas</h2>
+                    <div class="item online">
+                        <div class="icone">
+                            <span class="material-icons-sharp">shopping_cart</span>
+                        </div>
+                        <div class="direita">
+                            <div class="info">
+                                <h3>PEDIDOS ONLINE</h3>
+                                <small class="legendas">Ultimas 24h</small>
+                            </div>
+                            <h5 class="sucesso">+39%</h5>
+                            <h3>3849</h3>
+                        </div>
+                    </div>
+
+                    <div class="item offline">
+                        <div class="icone">
+                            <span class="material-icons-sharp">local_mall</span>
+                        </div>
+                        <div class="direita">
+                            <div class="info">
+                                <h3>PEDIDOS OFFLINE</h3>
+                                <small class="legendas">Ultimas 24h</small>
+                            </div>
+                            <h5 class="perigo">-17%</h5>
+                            <h3>1100</h3>
+                        </div>
+                    </div>
+
+                    <div class="item cliente">
+                        <div class="icone">
+                            <span class="material-icons-sharp">person</span>
+                        </div>
+                        <div class="direita">
+                            <div class="info">
+                                <h3>NOVOS CLIENTES</h3>
+                                <small class="legendas">Ultimas 24h</small>
+                            </div>
+                            <h5 class="sucesso">+25%</h5>
+                            <h3>849</h3>
+                        </div>
+                    </div>
+                    <div class="item add-produto">
+                        <div>
+                            <span class="material-icons-sharp">add</span>
+                            <h3>Adicionar Produtos</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
