@@ -141,7 +141,6 @@ aside{
 }
 
 aside .top{
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -526,3 +525,164 @@ main .pedidos-recentes a{
     font-weight: 600;
 }
 /*==================Fim Analise de Vendas===========================*/
+/*=============Media Queries - tablet e Notebooks===================*/
+
+@media screen and (max-width:1200px) {
+
+    .container{
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+
+    aside .logo h2{
+        display: none;
+    }
+    
+    aside .sidebar h3{
+        display: none;
+    }
+
+    aside .sidebar a{
+        width: 5.6rem;
+    }
+
+    aside .sidebar a:last-child{
+        position: relative;
+        margin-top: 1.8rem;
+    }
+
+    main .relatorios{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    main .pedidos-recentes{
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 8.8rem;
+    }
+
+    main .pedidos-recentes table{
+        width: 83vw;
+    }
+
+    main table tbody tr td:last-child {
+        display: none;
+    }
+
+    main table tbody tr td:first-child {
+        display: none;
+    }
+    main table thead tr th:first-child{
+        display: none;
+    }
+    }
+
+    /*=============Media Queries - Tablets e Mobile===================*/
+
+    @media screen and (max-width:768px) {
+
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    aside{
+    position: fixed;
+    left: 0;
+    background-color: var(--cor-branco);
+    width: 18rem;
+    z-index: 3;
+    box-shadow: 1rem 3rem 4rem var(--cor-light);
+    height: 100vh;
+    padding-right: var(--cartao-padding);
+    display: none;
+    }
+
+    aside .logo{
+        margin-left: 1rem;
+    }
+    
+    aside .logo h2{
+        display: inline;
+    }
+
+    aside .sidebar h3{
+        display: inline;
+    }
+
+    aside .sidebar a{
+        width: 100%;
+        height: 3.4rem;
+    }
+
+    aside .sidebar a:last-child{
+        position: absolute ;
+        bottom: 5rem;
+    }
+
+    aside .close{
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    main{
+        margin-top: 8rem;
+        padding: 0 1rem;
+    }
+
+    main .pedidos-recentes{
+        position: relative;
+        margin: 3rem 0 0 0;
+        width: 100%;
+    }
+
+    main .pedidos-recentes table{
+        width: 100%;
+        margin: 0;
+    }
+    .direita{
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+
+    .direita .cabecalho{
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        background-color: var(--cor-branco);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--cor-light);
+    }
+
+    .direita .cabecalho .alt-tema{
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+    }
+
+    .direita .perfil .info{
+        display: none;
+    }
+
+    .direita .cabecalho button{
+        display: inline-block;
+        background-color: transparent;
+        cursor: pointer;
+        color: var(--cor-dark);
+        position: absolute;
+        left: 1rem;
+    }
+
+    .direita .cabecalho button span{
+        font-size: 2rem;
+    }
+
+    }
