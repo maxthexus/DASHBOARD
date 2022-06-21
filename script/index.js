@@ -17,3 +17,18 @@ altTema.addEventListener('click', ()=> {
     altTema.querySelector('span:nth-child(1)').classList.toggle('ativo')
     altTema.querySelector('span:nth-child(2)').classList.toggle('ativo')
 })
+
+
+
+Pedidos.forEach(pedido =>{
+    const tr = document.createElement('tr');
+    const trConteudo = `
+    <td>${pedido.nomeProduto}</td>
+    <td>${pedido.numProduto}</td>
+    <td>${pedido.pagStatus}</td>
+    <td class="${pedido.envio === 'Cancelado' ? 'perigo': pedido.envio === 'Pendente'?'atencao' : 'primaria'} ">${pedido.envio}</td>
+    <td class="primaria">Detalhes</td>
+    `
+    tr.innerHTML = trConteudo;
+    document.querySelector('table tbody').appendChild(tr);
+})
