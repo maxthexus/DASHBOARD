@@ -332,7 +332,7 @@ main .relatorios svg circle{
 
 main .relatorios .vendas svg circle{
     stroke-dasharray: 200;
-    stroke-dashoffset: -30;
+    stroke-dashoffset: -55;
 }
 
 main .relatorios .gastos svg circle{
