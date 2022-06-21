@@ -13,4 +13,7 @@ closeBtn.addEventListener('click', () => {
 //mudar tema
 altTema.addEventListener('click', ()=> {
     document.body.classList.toggle('tema-dark');
+
+    altTema.querySelector('span:nth-child(1)').classList.toggle('ativo')
+    altTema.querySelector('span:nth-child(2)').classList.toggle('ativo')
 })
