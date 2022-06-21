@@ -60,7 +60,7 @@ html{
 
 body{
     width: 100vw;
-    height: 100vw;
+    height: 100%;
     font-family: poppins, sans-serif;
     font-size: 0.88rem;
     background-color: var(--cor-fundo);
@@ -544,7 +544,7 @@ main .pedidos-recentes a{
 /*==================Fim Analise de Vendas===========================*/
 /*=============Media Queries - tablet e Notebooks===================*/
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1450px) {
 
     .container{
         width: 94%;
