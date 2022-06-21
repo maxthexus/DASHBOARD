@@ -4,7 +4,7 @@
 
 :root{
 
-    /*Cores*/
+    /*---------------------------Tema Light-------------------------------*/
 
     --cor-primaria: #7380EC;
     --cor-perigo: #FF7782;
@@ -31,6 +31,17 @@
     --sombra: 0 2rem 3rem var(--cor-light)
 
 }
+
+    /*---------------------------Dark Light-------------------------------*/
+
+    .tema-dark{
+        --cor-fundo: #181A1E;
+        --cor-branco:#202528;
+        --cor-dark: #EDEFFD;
+        --cor-dark-variacao:#A3BDCC;
+        --cor-light: #00000066;
+        --sombra: 0 2rem 3rem var(--cor-light)
+    }
 
 *{
     margin: 0;
@@ -591,7 +602,7 @@ main .pedidos-recentes a{
 
     aside{
     position: fixed;
-    left: 0;
+    left: -100%;
     background-color: var(--cor-branco);
     width: 18rem;
     z-index: 3;
@@ -599,6 +610,13 @@ main .pedidos-recentes a{
     height: 100vh;
     padding-right: var(--cartao-padding);
     display: none;
+    animation: showMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu {
+        to{
+            left: 0;
+        }
     }
 
     aside .logo{
