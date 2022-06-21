@@ -526,6 +526,12 @@ main .pedidos-recentes a{
     justify-content: center;
 }
 
+.direita .analise-vendas .add-produto:hover{
+    background-color: var(--cor-primaria);
+    color: white;
+    cursor: pointer;
+}
+
 .direita .analise-vendas .add-produto div{
     display: flex;
     align-items:  center;
