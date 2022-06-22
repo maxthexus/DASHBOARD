@@ -11,12 +11,6 @@ menuBtn.addEventListener('click', ()=>{
 closeBtn.addEventListener('click', () => {
     sideMenu.style.display ='none'
 })
-//menu ativo class="ativo"
-function mostrarAtivo(tag){
-    let menuAtivo = document.querySelector(".sidebar")
-    let
-
-}
 
 
 //mudar tema
