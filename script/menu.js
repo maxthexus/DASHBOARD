@@ -1,3 +1,13 @@
-const ativaMenu = document.querySelector('.sidebar a')
+const menuItem = document.querySelector(".sidebar").querySelectorAll("a")
+console.log(menuItem)
 
-ativaMenu.querySelector('a').classList.toggle('ativo')
+menuItem.forEach(Element => {
+    Element.addEventListener("click",function(){
+        menuItem.forEach(menu=>menu.classList.remove("ativo"))
+
+        this.classList.add("ativo")
+    })
+})
+
+
+//let item = document.getElementsByTagName('a')[i].classList.toggle('ativo')
